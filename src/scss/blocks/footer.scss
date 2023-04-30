@@ -1,1 +1,48 @@
 /* ESTILOS DEL FOOTER */
+@use "../mixins/responsive.scss" as *;
+
+
+
+.footer{
+    background-color: #07043B;
+    padding: 2rem;
+    color: white;
+    @include responsive(laptop) {
+padding: 5rem;
+                  }
+    
+}
+.logo{
+    color: white;
+    margin-bottom: 1rem;
+    
+}
+.grid-footer{
+    display: grid;
+    @include responsive(laptop) {
+        display: grid;
+        height: 216px;
+        grid-template-columns: 355px 355px 355px 355px;
+        grid-template-rows: 216px;
+                  }
+}
+.grid-item{
+    display: flex;
+    flex-direction: column;
+    line-height: 0.4rem;
+    margin-top: 1rem;
+}
+
+.name{
+    position: relative;
+    margin-top: -0.8rem;
+    margin-left: 2.1rem;
+}
+.namemail{
+    position: relative;
+    margin-top: -0.8rem;
+    margin-left: 2.1rem;
+}
+.logomail{
+    padding-top: 1rem;
+}

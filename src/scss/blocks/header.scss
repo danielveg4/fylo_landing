@@ -1,1 +1,114 @@
+@use "../mixins/responsive.scss" as *;
 
+
+.header{
+    padding: 1rem;
+    @include responsive(laptop) {
+    padding: 5rem;
+      }
+
+&__top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+&__portal{
+    display: flex;
+    flex-direction: column;
+    @include responsive(laptop) {
+        flex-direction: row-reverse;
+        margin-top: 2rem;
+        gap: 10rem;
+              }
+}
+
+&__image{
+    margin-top: 5rem;
+}
+
+&__content{
+display: flex;
+flex-direction: column;
+text-align: center;
+
+@include responsive(laptop) {
+    text-align: left;
+    margin-top: 6rem;
+          }
+
+}
+
+&__title{
+    font-size: 1.8rem;
+    color: #07043B;
+    @include responsive(laptop) {
+    font-size: 2.6rem;
+              }
+}
+
+&__text{
+    font-size: 1.2rem;
+    color: #07043B;
+    @include responsive(laptop) {
+    font-size: 1.4rem;
+    margin-top: 0;
+              }
+}
+
+&__login{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    @include responsive(laptop) {
+    flex-direction: row;
+              }
+
+}
+
+&__mail{
+    height: 45px;
+    border: 1px solid #07043B;
+    color: grey;
+    text-align: left;
+    padding: 0.7rem;
+    border-radius: 3px;
+    @include responsive(laptop) {
+    width: 400px;
+                  }
+}
+
+&__start{
+    height: 45px;
+    border: 1px solid #07043B;
+    border-radius: 3px;
+    background-color: #2F65F8;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 0.5rem;
+    @include responsive(laptop) {
+    width: 200px;
+    text-align: center;
+                  }
+}
+
+
+}
+
+.main-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 180px;
+    font-size: 1rem;
+    color: #07043B;
+}
+.logo{
+    max-width: 80px;
+    @include responsive(laptop) {
+        max-width: 150px;
+        
+                      }
+}

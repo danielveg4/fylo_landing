@@ -1,0 +1,80 @@
+@use "../mixins/responsive.scss" as *;
+
+.card{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    padding-top: 1rem;
+    background-color: #575988;
+    @include responsive(laptop) {
+        flex-direction: row;
+        padding: 5rem;
+        padding-top: 2rem;
+                  }
+
+&__content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    @include responsive(laptop) {
+    text-align: left;
+    margin-right: 15rem;
+                  }
+}
+
+&__title{
+    color: white;
+    font-size: 1.5rem;
+    @include responsive(laptop) {
+    font-size: 2rem;
+                  }
+}
+
+&__text{
+    color: white;
+    @include responsive(laptop) {
+    margin-top: 0;
+                  }
+}
+
+&__login{
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    @include responsive(laptop) {
+
+    width: 70%;
+              }
+
+}
+
+&__mail{
+    height: 45px;
+    background-color: white;
+    color: grey;
+    text-align: left;
+    padding: 0.7rem;
+    border-radius: 3px;
+    @include responsive(laptop) {
+    width: 400px;
+                  }
+}
+
+&__start{
+    height: 45px;
+    border-radius: 3px;
+    background-color: #2F65F8;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    padding-top: 0.7rem;
+    text-align: center;
+    @include responsive(laptop) {
+    width: 200px;
+    text-align: center;
+                  }
+}
+
+}
