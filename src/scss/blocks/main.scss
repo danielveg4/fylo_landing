@@ -1,131 +1,102 @@
 @use "../mixins/responsive.scss" as *;
-@use '../mixins/pseudo.scss' as *;
+@use "../mixins/pseudo.scss" as *;
 
 .main {
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-    margin-top: 4rem;
-    background-color: #F8F8FE;
-    &::after{
-    @include pseudo(100%, 100%);
-        top: 30rem;
-        left: 0rem;
-     transform: translate(0);
-     background-image: url('../assets/images/bg-curve-mobile.svg');
-     background-repeat: no-repeat;
-     background-position: center;
-    }
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  margin-top: 4rem;
+  background-color: #f8f8fe;
 
+  @include responsive(laptop) {
+    flex-direction: row-reverse;
 
+    gap: 5rem;
+    padding: 5rem;
+  }
 
-    @include responsive(laptop) {
-        flex-direction: row-reverse;
-        margin-top: 5rem;
-        gap: 5rem;
-        padding: 5rem;
-           &::after{
-       @include pseudo(100%, 100%);
-      top: 17rem;
-      left: 0rem;
-       transform: translate(0);
-       background-image: url('../assets/images/bg-curve-desktop.svg');
-       background-repeat: no-repeat;
-       background-position: center;
-    }
-
-          }
-
-          
-          
-&__image{
+  &__image {
     margin-top: 5rem;
     @include responsive(laptop) {
-    width: 60%;
-          }
-}
+    }
+  }
 
-&__content{
-}
+  &__content {
+  }
 
-&__principal{
+  &__principal {
     display: flex;
     flex-direction: column;
     text-align: center;
     @include responsive(laptop) {
-        text-align: left;
-        margin-top: 5rem;
-          }
-}
-&__title{
+      text-align: left;
+      margin-top: 5rem;
+    }
+  }
+  &__title {
     font-size: 1.3rem;
-    color: #07043B;
+    color: #07043b;
     @include responsive(laptop) {
-        font-size: 2rem;
+      font-size: 2rem;
+    }
+  }
 
-          }
-}
-
-&__text{
+  &__text {
     font-size: 1.05rem;
-    color: #615F7E;
+    color: #615f7e;
     @include responsive(laptop) {
-    margin-top: 0.5rem;
-          }
-}
+      margin-top: 0.5rem;
+    }
+  }
 
-&__link{
-    color: #3DA08F;
+  &__link {
+    color: #3da08f;
     text-decoration: underline;
     @include responsive(laptop) {
-    margin-top: 0.5rem;
-          }
-
-}
-&__link:hover {
+      margin-top: 0.5rem;
+    }
+  }
+  &__link:hover {
     color: #6ad7c5;
   }
 
-&__card{
+  &__card {
     display: flex;
     flex-direction: column;
     background-color: white;
     padding: 1rem;
     margin: 1rem;
     border-radius: 5px;
-    box-shadow: 0px  0px  5px #6ad7c5;
+    box-shadow: 0px 0px 5px #6ad7c5;
     @include responsive(laptop) {
-    width: 310px;
-          }
-    
-}
+      width: 310px;
+    }
+  }
 
-&__quote{
+  &__quote {
     max-width: 15px;
     margin-bottom: -0.7rem;
-}
+  }
 
-&__person{}
+  &__person {
+  }
 
-&__photo{
+  &__photo {
     height: 2.7rem;
     border-radius: 10rem;
-}
+  }
 
-&__name{
+  &__name {
     position: relative;
     font-weight: bolder;
     margin-top: -2.5rem;
     margin-left: 3.5rem;
     font-size: 0.9rem;
-}
+  }
 
-&__charge{
+  &__charge {
     margin-left: 3.5rem;
     margin-top: -0.7rem;
     font-size: 0.9rem;
-}
-
-
-
+  }
 }
