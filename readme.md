@@ -1,15 +1,14 @@
 # Fylo landing page
 
-![Imagen del proyecto](https://github.com/eduardofierropro/Portafolio-y-CV/blob/main/IMAGEN-DEL-PROYECTO.jpg?raw=true)
+![Imagen del proyecto](https://github.com/danielveg4/fylo_landing/blob/main/Captura%20de%20Pantalla%202023-05-09%20a%20las%2017.15.07.png?raw=true)
 
 ## Ejemplo en vivo
 
-- [URL-de-github-pages-de-este-proyecto](URL-de-github-pages-de-este-proyecto)
-- [URL-de-la-api](URL-de-la-api)
+- [URL-de-github-pages-de-este-proyecto](https://danielveg4.github.io/fylo_landing/)
 
 ## Descripción 📑
 
-Lorem ipsum dolor, sit amet consectetur adipisicing elit. A voluptatum et esse, ipsum ipsam debitis ducimus dolorum placeat? Consectetur, soluta vero. Accusamus iure est pariatur, doloremque nam cumque natus unde adipisci laborum ut. At id sapiente consequatur earum. Magnam doloribus, voluptate zumito doloremque obcaecati vel excepturi numquam cupiditate ipsam quisquam!
+Página web en la que subir y compartir archivos, con varios formularios y estilos.
 
 ## Tecnologías 🛠
 
